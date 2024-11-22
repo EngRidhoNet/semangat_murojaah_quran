@@ -1,16 +1,53 @@
-# my_quran
+# Semangat Murojaah 📖
 
-A new Flutter project.
+Aplikasi **Semangat Murojaah** adalah aplikasi Al-Quran berbasis Flutter yang dirancang untuk membantu pengguna membaca, memahami, dan menghafal Al-Quran dengan lebih baik.
 
-## Getting Started
+## 🌟 Fitur Utama
+- **Baca Al-Quran**: Tampilan Al-Quran lengkap dengan dukungan terjemahan dan tajwid.
+- **Murojaah**: Pengingat dan pelacak hafalan untuk membantu para penghafal Al-Quran agar tetap istiqomah.
+- **Bookmark Ayat**: Simpan ayat favorit kita.
+- **Tema Gelap dan Terang**: Pilihan tema yang nyaman untuk mata.
+- **Pencarian Ayat**: Fitur pencarian cepat untuk menemukan ayat tertentu.
 
-This project is a starting point for a Flutter application.
+## 🚀 Cara Instalasi
+1. Pastikan kamu memiliki Flutter SDK versi terbaru. Jika belum, unduh dari [flutter.dev](https://flutter.dev).
+2. Clone repositori ini:
+    ```bash
+    git clone https://github.com/username/semangat-murojaah.git
+    ```
+3. Masuk ke direktori proyek:
+    ```bash
+    cd semangat-murojaah
+    ```
+4. Jalankan perintah berikut untuk menginstal semua dependensi:
+    ```bash
+    flutter pub get
+    ```
+5. Jalankan aplikasi di emulator atau perangkat fisik:
+    ```bash
+    flutter run
+    ```
 
-A few resources to get you started if this is your first Flutter project:
+## 📷 Cuplikan Layar
+Berikut adalah tampilan aplikasi:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Halaman Utama](assets/main_screen.jpg)
+![Halaman Detail Surat](assets/detail-surat.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Struktur Proyek
+```
+lib/
+├── main.dart           # Entry point aplikasi
+├── models/             # Model data
+├── providers/          # State management
+├── repositories/       # Logika pengambilan data
+├── screens/            # Halaman aplikasi
+├── services/           # Layanan seperti API
+├── widgets/            # Komponen UI
+```
+
+## 🤝 Kontribusi
+Kami menerima kontribusi dari siapa saja. Silakan buat pull request atau buka issue jika ada saran atau laporan bug.
+
+## 📜 Lisensi
+Aplikasi ini dilisensikan di bawah MIT License.
