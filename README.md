@@ -1,53 +1,142 @@
-# Semangat Murojaah 📖
+# Semangat Murojaah 📖🕌
 
-Aplikasi **Semangat Murojaah** adalah aplikasi Al-Quran berbasis Flutter yang dirancang untuk membantu pengguna membaca, memahami, dan menghafal Al-Quran dengan lebih baik.
+## 📚 Tentang Proyek
+
+**Semangat Murojaah** adalah aplikasi Al-Quran komprehensif berbasis Flutter yang dirancang untuk membantu umat Islam dalam perjalanan membaca, memahami, dan menghafal Al-Quran dengan lebih mudah dan menyenangkan.
 
 ## 🌟 Fitur Utama
-- **Baca Al-Quran**: Tampilan Al-Quran lengkap dengan dukungan terjemahan dan tajwid.
-- **Murojaah**: Pengingat dan pelacak hafalan untuk membantu para penghafal Al-Quran agar tetap istiqomah.
-- **Bookmark Ayat**: Simpan ayat favorit kita.
-- **Tema Gelap dan Terang**: Pilihan tema yang nyaman untuk mata.
-- **Pencarian Ayat**: Fitur pencarian cepat untuk menemukan ayat tertentu.
 
-## 🚀 Cara Instalasi
-1. Pastikan kamu memiliki Flutter SDK versi terbaru. Jika belum, unduh dari [flutter.dev](https://flutter.dev).
-2. Clone repositori ini:
+### 🔍 Eksplorasi Al-Quran
+- **Baca Al-Quran Lengkap**
+  - Tampilan ayat dalam bahasa Arab
+  - Terjemahan multi-bahasa
+  - Panduan tajwid interaktif
+  - Dukungan bacaan offline
+
+- **Murojaah (Pengulangan Hafalan)**
+  - Pengingat hafalan harian
+  - Pelacakan progress hafalan
+  - Statistik dan grafik capaian
+  - Sistem penilaian (rating) hafalan
+
+- **Fitur Tambahan**
+  - Bookmark ayat favorit
+  - Mode tema gelap/terang
+  - Pencarian ayat cepat dan akurat
+  - Dukungan multiple bahasa antarmuka
+
+## 🔧 Teknologi yang Digunakan
+
+### Framework & Bahasa
+- ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+- ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+
+### State Management
+- Provider
+- GetX
+
+### Dependensi Utama
+- `quran_data`: Manajemen data Al-Quran
+- `shared_preferences`: Penyimpanan lokal
+- `http`: Komunikasi API
+- `sqflite`: Database lokal
+
+## 🚀 Cara Instalasi & Penggunaan
+
+### Prasyarat
+- Flutter SDK 3.10+
+- Dart SDK
+- Android Studio / VS Code
+- Emulator/Perangkat Android/iOS
+
+### Langkah Instalasi
+
+1. **Clone Repositori**
     ```bash
     git clone https://github.com/username/semangat-murojaah.git
-    ```
-3. Masuk ke direktori proyek:
-    ```bash
     cd semangat-murojaah
     ```
-4. Jalankan perintah berikut untuk menginstal semua dependensi:
+
+2. **Instal Dependensi**
     ```bash
     flutter pub get
     ```
-5. Jalankan aplikasi di emulator atau perangkat fisik:
+
+3. **Jalankan Aplikasi**
     ```bash
     flutter run
+    # Atau gunakan mode debug di IDE
     ```
 
-## 📷 Cuplikan Layar
-Berikut adalah tampilan aplikasi:
+## 📱 Tangkapan Layar
 
-![Halaman Utama](assets/main_screen.jpg)
-![Halaman Detail Surat](assets/detail-surat.jpg)
+<p float="left">
+  <img src="assets/home.png" width="200" />
+  <img src="assets/waktu_sholat.png" width="200" />
+  <img src="kiblat.png" width="200" />
+  <img src="setting.png" width="200" />
+  <img src="detail-surat.jpg" width="200" />
+</p>
 
-## 🛠️ Struktur Proyek
+## 🗂️ Struktur Proyek
+
 ```
-lib/
-├── main.dart           # Entry point aplikasi
-├── models/             # Model data
-├── providers/          # State management
-├── repositories/       # Logika pengambilan data
-├── screens/            # Halaman aplikasi
-├── services/           # Layanan seperti API
-├── widgets/            # Komponen UI
+semangat-murojaah/
+│
+├── lib/
+│   ├── main.dart
+│   ├── models/
+│   │   ├── surah_model.dart
+│   │   ├── ayat_model.dart
+│   │   └── hafalan_model.dart
+│   │
+│   ├── providers/
+│   │   ├── quran_provider.dart
+│   │   └── hafalan_provider.dart
+│   │
+│   ├── repositories/
+│   │   ├── quran_repository.dart
+│   │   └── hafalan_repository.dart
+│   │
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   ├── main_screen.dart
+│   │   └── prayer_times_screen.dart
+│   │   └── setting_screen.dart
+│   │   └── surah_detail_screen.dart
+│   ├── services/
+│   │   ├── api_service.dart
+│   │   └── prayer_service.dart
+│   │
+│   └── widgets/
+│       ├── custom_app_bar.dart
+│       └── hafalan_progress_card.dart
+│
+├── test/
+└── assets/
 ```
 
 ## 🤝 Kontribusi
-Kami menerima kontribusi dari siapa saja. Silakan buat pull request atau buka issue jika ada saran atau laporan bug.
 
-## 📜 Lisensi
-Aplikasi ini dilisensikan di bawah MIT License.
+Kami sangat terbuka terhadap kontribusi dari komunitas. Silakan ikuti panduan berikut:
+
+1. Fork repositori
+2. Buat branch fitur baru (`git checkout -b fitur/AturHalamanBaru`)
+3. Commit perubahan Anda (`git commit -m 'Tambah fitur baru'`)
+4. Push ke branch (`git push origin fitur/AturHalamanBaru`)
+5. Buka Pull Request
+
+## 📋 Rencana Pengembangan
+
+- [ ] Implementasi fitur tafsir
+- [ ] Dukungan bahasa tambahan
+- [ ] Integrasi kalkulator waktu sholat
+- [ ] Mode hafalan interaktif
+- [ ] Sinkronisasi data antar perangkat
+
+## 🛡️ Lisensi
+
+Didistribusikan di bawah **MIT License**. Lihat `LICENSE` untuk informasi lebih lanjut.
+---
+
+**Semangat Murojaah** - Menghafal Al-Quran Lebih Mudah, Lebih Dekat! 🕌📖
