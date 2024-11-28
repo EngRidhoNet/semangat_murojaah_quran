@@ -73,9 +73,9 @@
 <p float="left">
   <img src="assets/home.png" width="200" />
   <img src="assets/waktu_sholat.png" width="200" />
-  <img src="kiblat.png" width="200" />
-  <img src="setting.png" width="200" />
-  <img src="detail-surat.jpg" width="200" />
+  <img src="assets/kiblat.png" width="200" />
+  <img src="assets/setting.png" width="200" />
+  <img src="assets/detail-surat.jpg" width="200" />
 </p>
 
 ## 🗂️ Struktur Proyek
